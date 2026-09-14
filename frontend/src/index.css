@@ -1,16 +1,17 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #95ff9a54;
-  --border: #e5e4e7;
+  --text: #4b5563;
+  --text-h: #1a2e22;
+  --bg: #f7f9f8;
+  --border: #dfe5e1;
   --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
+  --accent: #1f7a4d;
+  --accent-dark: #16603b;
+  --accent-bg: rgba(31, 122, 77, 0.08);
+  --accent-border: rgba(31, 122, 77, 0.35);
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    rgba(0, 0, 0, 0.06) 0 1px 3px 0, rgba(0, 0, 0, 0.04) 0 1px 2px -1px;
 }
 
 body {
@@ -19,67 +20,26 @@ body {
 }
 
 #root {
-  width: 1126px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
+  text-align: left;
   min-height: 100svh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
 }
 
 h1 {
-  font-size: 37px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  font-weight: bold;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
+  font-size: 20px;
+  letter-spacing: -0.2px;
+  margin: 0;
+  font-weight: 600;
+  color: var(--text-h);
 }
+
 p {
   margin: 0;
-}
-#navbar{
-  display: grid;
-  margin: 32px 0;
-  text-align: center;
-  letter-spacing: -0.9px; 
-  grid-template-columns: 250px 250px 250px 200px 200px 200px;
-  font-weight: bold;
-  font-size: 20px;
-
-}
-#cadastro{
-  display: grid;
-  margin: 32px 0;
-  text-align: center;
-  letter-spacing: -0.9px; 
-  grid-template-columns: 250px 250px 250px 200px 200px 200px;
-}
-input[type="text"]{
-  background-color: #22222233;
-  color: #fff;
-  border: 1px solid #444;
-  syze: 16px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px #00000033;
-  transition: all 0.3s ease;
-}
-#opcoes{
-  border: 1px solid #444;
-  padding: 10px;
-  box-shadow: 0 0 8px #00000033;
-  border-radius: 10px;
-  background-color: --bg;
-}
-.button{
-    box-shadow: 0 0 8px #00000033;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    
 }

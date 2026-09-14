@@ -1,0 +1,224 @@
+.form-page {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 40px 24px 64px;
+  box-sizing: border-box;
+}
+
+.form-panel {
+  width: 100%;
+  max-width: 780px;
+}
+
+.form-intro {
+  margin-bottom: 24px;
+}
+
+.form-intro h2 {
+  margin: 0 0 6px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+.form-intro p {
+  color: var(--text);
+  font-size: 15px;
+}
+
+.form-section {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  padding: 24px 28px;
+  margin: 0 0 24px;
+}
+
+.form-section legend {
+  padding: 0 8px;
+  margin-left: -8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.form-section-description {
+  color: var(--text);
+  font-size: 13px;
+  margin: -8px 0 16px;
+}
+
+.form-questions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+}
+
+.form-question {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+  min-width: 0;
+}
+
+.form-question--full {
+  grid-column: 1 / -1;
+}
+
+.form-question-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: var(--text-h);
+  border: 1px solid var(--border);
+  font-size: 14px;
+  font-family: inherit;
+  padding: 9px 12px;
+  border-radius: 5px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-bg);
+}
+
+input:disabled {
+  background-color: var(--code-bg);
+  color: var(--text);
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-h);
+  cursor: pointer;
+}
+
+.form-checkbox input {
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+  flex-shrink: 0;
+}
+
+.family-member {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 18px 20px 0;
+  margin-bottom: 16px;
+  background: var(--bg);
+}
+
+.family-member-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-h);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.link-button {
+  border: none;
+  background: none;
+  color: #b3261e;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+.family-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.button {
+  border: 1px solid transparent;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: none;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.button-primary {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.button-primary:hover {
+  background-color: var(--accent-dark);
+}
+
+.button-secondary {
+  background-color: #fff;
+  border-color: var(--border);
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.button-secondary:hover {
+  background-color: var(--code-bg);
+}
+
+@media (max-width: 600px) {
+  .form-section {
+    padding: 20px 18px;
+  }
+
+  .form-questions,
+  .family-summary {
+    grid-template-columns: 1fr;
+  }
+}

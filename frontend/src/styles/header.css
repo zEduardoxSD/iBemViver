@@ -1,0 +1,24 @@
+header {
+  background: #00843d;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header h1 {
+  color: #fff;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero img {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background: #fff;
+}
